@@ -1,0 +1,9 @@
+# ignores
+node_modules
+dist
+*.log
+.env
+*.tmp
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
