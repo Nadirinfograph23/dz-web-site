@@ -10,9 +10,9 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">عن الشركة</a></li>
-                <li><a href="#">خدماتنا</a></li>
+                <li><a href="#" class="hover">الرئيسية</a></li>
+                <li><a href="#" class="hover">عن الشركة</a></li>
+                <li><a href="#" class="hover">خدماتنا</a></li>
             </ul>
         </nav>
     </header>
@@ -20,6 +20,5 @@
         <h1>dz-web-site</h1>
         <p>هذا الموقع يضم المزيد من المعلومات حول خدمات الشركة.</p>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
