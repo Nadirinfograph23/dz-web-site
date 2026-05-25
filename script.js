@@ -1,6 +1,2 @@
-console.log('السكريبت يعمل بشكل صحيح');
-
-// إضافة حدث عند تحميل الصفحة
-window.addEventListener('load', function() {
-  console.log('الصفحة تم تحميلها');
-});
+// لا يوجد أي كود هنا، المشكلة في هذا الملف.
+console.log("hello world");
