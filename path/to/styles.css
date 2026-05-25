@@ -1,0 +1,145 @@
+/* نظام ألوان متناسق */
+:root {
+  --primary-color: #2f343a; /* لون أساسي */
+  --secondary-color: #3498db; /* لون ثاني */
+  --dark-color: #1a1d23; /* لون ظل */
+  --light-color: #f7f7f7; /* لون فاتح */
+  --hover-color: #337ab7; /* لون hover */
+  --background-color: #1a1d23; /* لون خلفية */
+  --text-color: #ffffff; /* لون نص */
+  --border-radius: 10px; /* مسافة رأس الشكل */
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* ظل الشكل */
+}
+
+/* خطوط أفضل ومسافات متناسقة */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* دعم Dark/Light mode */
+body[data-theme="dark"] {
+  --background-color: #1a1d23;
+  --text-color: #ffffff;
+}
+
+body[data-theme="light"] {
+  --background-color: #f7f7f7;
+  --text-color: #333;
+}
+
+/* تحسينات قوية على الفئات */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 20px;
+  border-bottom: 1px solid var(--dark-color);
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header nav ul li {
+  margin-right: 20px;
+}
+
+.header nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.header nav a:hover {
+  color: var(--hover-color);
+}
+
+.main-content {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.main-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.main-content p {
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: var(--light-color);
+  padding: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  background-color: var(--hover-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+}
+
+/* استجابة محسّنة للجوال */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90vw;
+  }
+  .header nav ul {
+    flex-direction: column;
+  }
+  .header nav ul li {
+    margin-bottom: 10px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+}
