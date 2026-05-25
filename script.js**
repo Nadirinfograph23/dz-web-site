@@ -1,0 +1,32 @@
+//اضافة سلوك لعناصر النافذة
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+
+    //اضافة سلوك لعنصر النافذة
+    header.addEventListener('click', function() {
+        nav.classList.toggle('active');
+    });
+
+    //اضافة سلوك لعناصر قائمة النافذة
+    const navItems = document.querySelectorAll('nav ul li');
+    navItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            navItems.forEach(function(item) {
+                item.classList.remove('active');
+            });
+            item.classList.add('active');
+        });
+    });
+});
+
+//اضافة سلوك لعناصر الفقرات
+const sections = document.querySelectorAll('section');
+sections.forEach(function(section) {
+    section.addEventListener('click', function() {
+        sections.forEach(function(section) {
+            section.classList.remove('active');
+        });
+        section.classList.add('active');
+    });
+});
