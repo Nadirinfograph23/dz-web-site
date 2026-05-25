@@ -1,0 +1,21 @@
+// إجراء التابع الأساسي
+document.addEventListener('DOMContentLoaded', function() {
+    // إجراء التحميل للعناصر
+    const hero = document.querySelector('.hero');
+    
+    // إجراء التفاعل مع العناصر
+    hero.addEventListener('click', function() {
+        console.log('تم النقر على العنصر');
+    });
+    
+    // إجراء التفاعل مع عناصر القائمة
+    const navLinks = document.querySelectorAll('nav a');
+    navLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            navLinks.forEach(function(otherLink) {
+                otherLink.classList.remove('active');
+            });
+            this.classList.add('active');
+        });
+    });
+});
