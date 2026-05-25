@@ -1,0 +1,10 @@
+// تحسينات على الاستجابة للجوال
+const container = document.querySelector(".container");
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 768) {
+    container.style.maxWidth = "90vw";
+  } else {
+    container.style.maxWidth = "1200px";
+  }
+});
