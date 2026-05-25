@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعم زائد - الموقع الرسمي</title>
+</head>
+<body>
+    <header>
+        <h1>دعم زائد</h1>
+        <nav>
+            <ul>
+                <li><a href="#">الرئيسية</a></li>
+                <li><a href="#">الفريق</a></li>
+                <li><a href="#">المشاريع</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>نبذة عن دعم زائد</h2>
+            <p>دعم زائد هو مشروع يهدف إلى توفير الدعم والمساعدة لمن يحتاجونها في المجتمع.</p>
+        </section>
+        <section>
+            <h2>الفريق</h2>
+            <p>الفريق هو مجموعة من الأفراد يتعاونون على توفير الدعم والمساعدة.</p>
+        </section>
+        <section>
+            <h2>المشاريع</h2>
+            <p>المشاريع هي مجموعة من البرامج والمشروعات التي يتم تنفيذها تحت إشراف دعم زائد.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 دعم زائد</p>
+    </footer>
+</body>
+</html>
