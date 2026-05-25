@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تجربة Modern Dark</title>
+    <link rel="stylesheet" href="/path/to/styles.css" />
+  </head>
+  <body data-theme="dark">
+    <div class="container">
+      <header class="header">
+        <nav>
+          <ul>
+            <li><a href="#">الرئيسية</a></li>
+            <li><a href="#">صفحة 2</a></li>
+            <li><a href="#">صفحة 3</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="main-content">
+        <h1>تجربة Modern Dark</h1>
+        <p>هذه تجربة جديدة و عصرية</p>
+        <div class="card">
+          <img src="image.jpg" alt="صورة" />
+          <h2>عنوان البطاقة</h2>
+          <p>وصف البطاقة</p>
+        </div>
+        <button class="button">اضغط هنا</button>
+      </main>
+    </div>
+    <script>
+      const themeToggle = document.body;
+      const toggleDarkMode = () => {
+        themeToggle.dataset.theme = themeToggle.dataset.theme === "dark" ? "light" : "dark";
+      };
+      document.addEventListener("DOMContentLoaded", () => {
+        const darkModeToggle = document.querySelector(".dark-mode-toggle");
+        if (darkModeToggle) {
+          darkModeToggle.addEventListener("click", toggleDarkMode);
+        }
+      });
+    </script>
+  </body>
+</html>
