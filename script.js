@@ -1,6 +1,4 @@
-console.log('السكريبت يعمل بشكل صحيح');
-
-// إضافة حدث عند تحميل الصفحة
-window.addEventListener('load', function() {
-  console.log('الصفحة تم تحميلها');
+console.log("Script загружен و يعمل بشكل صحيح");
+document.addEventListener("DOMContentLoaded", function() {
+    console.log("المحتوى загружен");
 });
